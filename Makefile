@@ -14,10 +14,8 @@ lint::
 	golangci-lint run --timeout 5m
 
 test_fast::
-	$(GO_TEST_FAST) ./il/... ./gen/... ./internal/...
 
 test_all::
-	$(GO_TEST) ./il/... ./gen/... ./internal/...
 	$(GO_TEST) ./tests/...
 
 # The travis_* targets are entrypoints for CI.
